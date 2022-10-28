@@ -1,0 +1,112 @@
+<mvc:View xmlns:core="sap.ui.core"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:m="sap.m"
+          xmlns="sap.suite.ui.commons"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          width="100%"
+          controllerName="custom.solex.UpcomingTravel.Card">
+    <Timeline
+			id="idTimeline"
+			showHeaderBar="false"
+			>
+		<content>
+        <TimelineItem
+					
+					title="Expenses"
+					userNameClickable="true"
+					text="{JobResponsibilities}"
+					userName="{Name}"
+					filterValue="{JobTitle}"
+					icon="sap-icon://money-bills">
+            <m:Button text="Register Expenses" press="onRegsExpenses" />
+			</TimelineItem>
+		
+        <TimelineItem
+					title="Arrival"
+					userNameClickable="true"
+					text="{JobResponsibilities}"
+					userName="{Name}"
+					filterValue="{JobTitle}"
+					icon="sap-icon://flight">
+            <m:VBox>
+             <m:HBox>
+             <m:Label text="Inbound Flight no: " />
+             <m:Text text="3454" />      
+             </m:HBox>
+             <m:Text text="Copenhagen Airport (CPH)"/>
+             
+             <m:Text text="1 Apr 17:35" />  
+             <m:Text text="Helsinki Airport (HEL)"/>
+             <m:Text text="1 Apr 19:10" />  
+            
+            </m:VBox>
+			</TimelineItem>
+            
+        <TimelineItem
+					
+					title="Accommodation"
+					userNameClickable="true"
+					text="{JobResponsibilities}"
+					userName="{Name}"
+					filterValue="{JobTitle}"
+					icon="sap-icon://addresses">
+            <m:Button text="Book Accommodation" press="onBookAccommodation" />
+			</TimelineItem>
+			<TimelineItem
+					
+					title="Car Rental"
+					userNameClickable="true"
+					text="{JobResponsibilities}"
+					userName="{Name}"
+					filterValue="{JobTitle}"
+					icon="sap-icon://car-rental">
+            <m:VBox>
+             <m:HBox>
+             <m:Label text="Reservation No: " />
+             <m:Text text="123" />      
+             </m:HBox>
+             <m:Text text="Toyota Corolla" /> 
+             <m:Text text="30 Mar 11:00" />  
+            <m:Text text="1 Apr 16:00" />  
+            </m:VBox>
+			</TimelineItem>
+            <TimelineItem
+					title="Departure"
+					userNameClickable="true"
+					text="{JobResponsibilities}"
+					userName="{Name}"
+					filterValue="{JobTitle}"
+					icon="sap-icon://flight">
+            <m:VBox>
+             <m:HBox>
+             <m:Label text="Outbound Flight no: " />
+             <m:Text text="5252" />      
+             </m:HBox>
+             <m:Text text="Helsinki Airport (HEL)"/>
+             <m:Text text="30 Mar 09:10" />  
+             <m:Text text="Copenhagen Airport (CPH)"/>
+             <m:Text text="30 Mar 10:40" />  
+            
+            </m:VBox>
+			</TimelineItem>
+            <TimelineItem
+					
+					title="Train"
+					userNameClickable="true"
+					text="{JobResponsibilities}"
+					userName="{Name}"
+					filterValue="{JobTitle}"
+					icon="sap-icon://subway-train">
+            <m:VBox>
+             <m:HBox>
+             <m:Label text="Departure: " />
+             <m:Text text="30 Mar 06:02" />      
+             </m:HBox>
+             <m:Text text="Tampere Central Station" /> 
+             <m:Text text="30 Mar 07:48" />  
+            <m:Text text="Helsinki Airport (HEL)"         />
+            </m:VBox>
+			</TimelineItem>
+		</content>
+	</Timeline>
+</mvc:View>
